@@ -1,2 +1,100 @@
-@import 'main';
-@import 'common/button'
+.login {
+    width: auto;
+    height: 351px;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+,
+body {
+    background-color: #F7F7F8;
+    height:100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.loginbox {
+    width: 495px;
+    height: 547px;
+    background-color: #FFFFFF;
+    border: 1px solid #007AFF;
+    border-radius: 5px;
+    position: relative;
+}
+
+ .space{
+       height: 68.5px;
+ }
+ .space2{
+       height: 60.5px;
+ }
+
+
+
+.header {
+    width: 175px;
+    height: 41px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 41px;
+    color: #667685;
+}
+
+.signin {
+    width: 92px;
+    height: 41px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left:20px;
+    margin-top: 33px;
+    text-align: center;
+    line-height: 41px;
+    color: #667685;
+}
+
+.email {
+    width: 81px;
+    height: 11px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1px;
+    line-height: 16px;
+    color: #4A4A4A;
+    opacity: 0.6;
+}
+
+.line1 {
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: 20px;
+    height: 2px;
+    border: 1.5px solid #D3D3D3;
+}
+
+.buttonbox{
+    width: 382px;
+    opacity: 0.9;
+    height: 67px;
+    background-color: #9B9B9B;
+    border: 1px solid;
+    border-radius: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align:center;
+    padding-top:0 0 0 0;
+    font-weight: 500;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.email {
+    opacity: 0.8;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    line-height: 6px;
+    color: #4A4A4A;
+  }

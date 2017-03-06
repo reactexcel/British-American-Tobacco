@@ -1,14 +1,21 @@
 import React from 'react';
-import '../styles/index.scss';
+import styles from '../styles/index.scss';
+import TextField from 'material-ui/TextField';
+import {Router, Route, IndexRoute, hashHistory, link} from 'react-router';
+import RaisedButton from 'material-ui/RaisedButton';
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import Checkbox from 'material-ui/Checkbox';
+import Drawer from 'material-ui/Drawer';
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
+
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>It Works!</h1>
-        <p>This React project just works including <span className="redBg">module</span> local styles.</p>
-        <p>Enjoy!</p>
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div>
+				{this.props.children}
+			</div>
+		);
+	}
 }
