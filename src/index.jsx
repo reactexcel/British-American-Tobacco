@@ -8,7 +8,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Portal from './mainpage.jsx';
 import App from './app.jsx';
-import Home from './containers/home.jsx';
+import Home from './components/home.jsx';
 injectTapEventPlugin();
 
 

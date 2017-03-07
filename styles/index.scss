@@ -5,7 +5,6 @@
     background-color: #FFFFFF;
 }
 
-,
 body {
     background-color: #F7F7F8;
     height:100%;
@@ -28,14 +27,13 @@ body {
        height: 60.5px;
  }
 
-
-
 .header {
-    width: 175px;
-    height: 41px;
+    width: 33%;
+    height: 34%;
     font-family: 'Nunito', sans-serif;
+    position: relative;
     font-size: 28px;
-    margin-left: 35px;
+    margin-left: 0%;
     margin-top: 25px;
     margin-bottom: 40px;
     font-weight: 300;
@@ -98,3 +96,60 @@ body {
     line-height: 6px;
     color: #4A4A4A;
   }
+
+  .heading{
+    opacity:0.8;
+    background-color:#FAFAFA;
+    height:10%;
+    margin-left:4%;
+    margin-top:0px;
+
+  }
+
+
+  .leftbox {
+      opacity: 0.7;
+      margin-left: 23%;
+      background-color: #ffffff;
+      position: relative;
+      margin-bottom: 1.5rem;
+      margin-top: 2%;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+      height: 40px;
+      width: 73%;
+
+  }
+
+
+.box {
+
+    margin-left: 23%;
+    background-color: #FAFAFA;
+    position: relative;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+    height: 87px;
+    width: 73%;
+    opacity: 0.8;
+}
+.box2 {
+
+    margin-left: 23%;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+    height: 972.3px;
+    width: 73%;
+
+}
+/*===========for===================responsive webpage */
+
+@media (min-width:850px) and (max-width:1000px) {
+
+}
+
+@media (min-width:960px) and (max-width:1280px) {
+}
+@media (min-width: 480px) and (max-width :959px) {
+}

@@ -24,7 +24,7 @@ export default class Portal extends React.Component {
               <div className="login">
               <div className="row">
                 <div className="col-md-offset-5">
-                  <h3 className="header">Admin Portal</h3>
+                  <h3 style={{opacity:"0.8", marginBottom:"35px",marginLeft:"7%"}}>Admin Portal</h3>
                 </div>
                 <div className="col-md-offset-4">
                   <div className="panel loginbox ">
@@ -35,36 +35,36 @@ export default class Portal extends React.Component {
                     <div className="col-md-offset-1 col-md-10">
                       <form>
                         <div className="form-group">
-                          <span style={{position:"absolute", marginTop:"30px",marginLeft:"15px", fontSize:"20px",fontWeight: "800",opacity:"0.2"}}><i className="fa fa-envelope-o" aria-hidden="true"></i></span>
+                          <span style={{position:"absolute", marginTop:"30px",marginLeft:"15px", fontSize:"20px",fontWeight: "800",opacity:"0.2"}}><i className="material-icons">mail_outline</i></span>
                           <TextField
                             className={"email"}
                             label="Email addresss"
                             style={style}
-                            floatingLabelStyle={{paddingLeft:"38px",marginTop:"-5px",}}
-                            inputStyle={{paddingLeft:"31px"}}
+                            floatingLabelStyle={{paddingLeft:"48px",marginTop:"-5px",}}
+                            inputStyle={{paddingLeft:"39px"}}
                             fullWidth={true}
                             floatingLabelText="Email address"/>
                         </div>
 
                         <div className="form-group">
-                        <span style={{position:"absolute", marginTop:"30px",marginLeft:"15px", fontSize:"23px",fontWeight: "800",opacity:"0.2"}}><i className="fa fa-lock" aria-hidden="true"></i></span>
+                        <span style={{position:"absolute", marginTop:"30px",marginLeft:"15px", fontSize:"23px",fontWeight: "800",opacity:"0.2"}}><i className="material-icons">https</i></span>
                           <TextField
                             label="Password"
                             fullWidth={true}
                             style={style}
-                            floatingLabelStyle={{paddingLeft:"38px"}}
-                            inputStyle={{paddingLeft:"25px"}}
+                            floatingLabelStyle={{paddingLeft:"48px",marginTop:"-5px"}}
+                            inputStyle={{paddingLeft:"38px"}}
                             icon={<i className="fa fa-lock" aria-hidden="true"></i>}
                             floatingLabelText="Password"/>
                         </div>
                         <div>
                           <Checkbox label="remember me"
                               style={style}
-                              iconStyle={{opacity:"0.6"}}
-                              labelStyle={{opacity:"0.6",fontFamily: "'Nunito', sans-serif",}}/>
+                              iconStyle={{opacity:"0.6",marginLeft:"8px"}}
+                              labelStyle={{opacity:"0.6",fontFamily: "Nunito', sans-serif",marginLeft:"1px"}}/>
                           </div>
                         <div className="space2"></div>
-                        <input type="button" className="btn buttonbox" value="LOGIN"></input>
+                        <input type="button" className="btn buttonbox" style={{fontFamily: "Nunito', sans-serif",fontWeight:"600"}} value="LOGIN"></input>
                     </form>
                   </div>
                  </div>
