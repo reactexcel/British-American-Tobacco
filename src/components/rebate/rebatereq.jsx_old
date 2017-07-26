@@ -1,0 +1,213 @@
+import React from 'react';
+import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import Divider from 'material-ui/Divider';
+import Drawer from 'material-ui/Drawer';
+import Dialog from 'material-ui/Dialog';
+import { Router, Route, Link } from 'react-router';
+import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
+import Header from '../generic/header/header';
+import BodyHead from '../generic/bodyhead';
+import SideMenu from '../generic/menu/menu';
+
+const styles = {
+
+  model: {
+    opacity: '1',
+  },
+
+  modelbody: {
+    height: '357px',
+    backgroundColor: '#FFFFFF',
+    border: '2px solid #4A4A4A',
+    borderRadius: '20px',
+  },
+};
+
+export default class RebateReq extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      openApply: false,
+      openCancel: false,
+    };
+  }
+
+  handleClick() {
+    this.props.router.push('/editoutlet');
+  }
+
+  handleOpenApply() {
+    this.setState({ openApply: true });
+  }
+
+  handleCloseApply() {
+    this.setState({ openApply: false });
+  }
+  handleopenCancel() {
+    this.setState({ openCancel: true });
+  }
+
+  handleCloseCancle() {
+    this.setState({ openCancel: false });
+  }
+
+  render() {
+    return (
+      <div className="main">
+        <Dialog
+          modal={false}
+          OverlayStyle={styles.modelbody}
+          open={this.state.openApply}
+          autoDetectWindowHeight
+          onRequestClose={this.handleCloseApply.bind(this)}
+        >
+          <div className="box2">
+            <div className="title">Apply Rebate Requests</div>
+            <div className="modeltext"> By pressing confirm you acknowlege that a rebate of <br />
+        $164 was given to Cheers Outlet for 268 Points .</div>
+            <button
+              type="button" onClick={this.handleCloseApply()}
+              className="btn btn-default modelbtn"
+            >CONFIRM</button>
+            <p className="diss">Dismiss</p>
+          </div>
+
+        </Dialog>
+
+        <Dialog
+          modal={false}
+          OverlayStyle={styles.modelbody}
+          open={this.state.openCancel}
+          autoDetectWindowHeight
+          onRequestClose={this.handleCloseCancle.bind(this)}
+        >
+          <div className="box2">
+            <div className="title">Cancel Rebate Request</div>
+            <div className="modeltext">By pressing confirm you acknowlege that a rebate of
+          $164 which was given to Cheers Outlet for 268 Points will be cancelled
+          and points will be credited back to the Outlet Account
+        </div> <br />
+            <button
+              type="button"
+              onClick={() => this.handleCloseCancle()}
+              className="btn btn-default modelbtn"
+            >CONFIRM</button>
+            <p className="diss">Dismiss</p>
+          </div>
+
+        </Dialog>
+
+        <div>
+          <Header pageTitle={'ALL REBATE REQUESTS'} {...this.props}/>
+        </div>
+        <div>
+          <SideMenu {...this.props} key="" />
+        </div>
+        <div>
+          <BodyHead pageTitle={'REBATE REQUESTS'} disableTitle />
+          <div className="row">
+            <div className="col-12" >
+              <div className="box2" >
+                <div className="row">
+                  <div className="col-12">
+                    <div style={{ overflow: 'hidden' }}>
+                      <table
+                        className="table tabels"
+                      >
+                        <thead >
+                          <tr>
+                            <th className="th">ID</th>
+                            <th className="th">BAT ID</th>
+                            <th />
+                            <th className="th">Outlet Name</th>
+                            <th className="th">Amount</th>
+                            <th className="th">(- Points)</th>
+                            <th className="th">Status</th>
+                            <th className="th">Date</th>
+                            <th />
+                            <th />
+                            <th />
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>734656</td>
+                            <td>231645</td>
+                            <td />
+                            <td>Cheers</td>
+                            <td>165</td>
+                            <td>268</td>
+                            <td >Applied <br />
+                            </td>
+                            <td>12 Dec 2017</td>
+                            <td><button
+                              type="button" onClick={() => this.handleOpenApply()}
+                              className="btn btn-default btns"
+                            >APPLY</button>
+                              <button
+                                type="button" onClick={this.handleopenCancel()}
+                                className="btn btn-default btnc "
+                              >CANCEL</button></td>
+                            <td />
+                            <td />
+                          </tr>
+                          <tr>
+                            <td>734656</td>
+                            <td>231645</td>
+                            <td />
+                            <td>Cheers</td>
+                            <td>165</td>
+                            <td>268</td>
+                            <td >Applied <br />
+                            </td>
+                            <td>12 Dec 2017</td>
+                            <td><button
+                              type="button" onClick={this.handleOpenApply()}
+                              className="btn btn-default btns"
+                            >APPLY</button>
+                              <button
+                                type="button" onClick={this.handleopenCancel()}
+                                className="btn btn-default btnc "
+                              >CANCEL</button></td>
+                            <td />
+                            <td />
+                          </tr>
+                          <tr>
+                            <td>734656</td>
+                            <td>231645</td>
+                            <td />
+                            <td>Cheers</td>
+                            <td>165</td>
+                            <td>268</td>
+                            <td >Applied <br />
+                            </td>
+                            <td>12 Dec 2017</td>
+                            <td><button
+                              type="button" onClick={this.handleOpenApply()}
+                              className="btn btn-default btntable"
+                            >APPLY</button>
+                              <button
+                                type="button" onClick={this.handleopenCancel()}
+                                className="btn btn-default btnc "
+                              >CANCEL</button></td>
+                            <td />
+                            <td />
+                          </tr>
+                          <tr />
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
